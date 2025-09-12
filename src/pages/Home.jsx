@@ -1,7 +1,7 @@
 import React from 'react'; 
 import { Button } from '@mui/material';
 import Navbar from '../components/Navbar';
-import resumePdf from '../assets/resume_dipa.pdf';
+import resumePdf from '../assets/dipa rsm.pdf';
 import HomeSections from './HomeSections';
 
 const Home = () => {

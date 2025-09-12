@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiDownload, FiAward, FiBriefcase, FiCode } from 'react-icons/fi';
-import resumePdf from '../assets/resume_dipa.pdf';
+import resumePdf from '../assets/dipa rsm.pdf';
 
 const Resume = () => {
   const pdfUrl = resumePdf;

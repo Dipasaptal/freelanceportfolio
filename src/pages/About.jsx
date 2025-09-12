@@ -99,13 +99,9 @@ const About = () => {
               <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">About Me</h2>
             </div>
             <p className="text-gray-600 leading-relaxed text-lg">
-              Hello! I'm Dipa, passionate about web development with a B.Tech in Computer Science Engineering
-              from Dr. D.Y. Patil Pratishthan's College of Engineering, Kolhapur. I completed a 5-month
-              internship as a Front-End Developer at SevenMentor Pvt. Ltd., Pune, and currently working as
-              a React.js Developer at Z-Plus Cyber Secure Technology, Pune. I've gained hands-on experience
-              in building responsive web applications and Android apps using React.js and React Native.
-              I'm confident in taking on new challenges and have a proven ability to quickly learn and
-              apply new technologies to solve real-world problems.
+              Hello! I'm Dipa, a passionate Web and Mobile Developer with a B.Tech in Computer Science Engineering from Dr. D.Y. Patil Pratishthan's College of Engineering, Kolhapur. I am currently working as a React.js Developer at Z-Plus Cyber Secure Technology, Pune, where I have gained 1 year of professional experience building responsive web applications and Android apps using React.js and React Native.
+Previously, I completed a 5-month internship as a Front-End Developer at SevenMentor Pvt. Ltd., Pune, where I built a strong foundation in front-end development.
+I have hands-on experience with UI development, API integration, state management, and performance optimization, and I’m confident in taking on new challenges while continuously improving my skills.
             </p>
           </div>
 
@@ -120,11 +116,16 @@ const About = () => {
               <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">Experience</h2>
             </div>
             <p className="text-gray-600 leading-relaxed text-lg">
-              Worked as a React.js Developer at Z-Plus Cyber Secure Technology, Pune (Dec 2024–Present),
-              and as a Front-End Development Intern at SevenMentor Pvt. Ltd, Pune (2024), where I developed
-              responsive web applications and Android apps using React.js and React Native. Improved site
-              performance and user engagement through reusable components and API integration, while
-              collaborating with cross-functional teams to deliver scalable, user-centric solutions.
+             Currently working as a React.js Developer at 
+  Z-Plus Cyber Secure Technology, Pune (Oct 2024 – Present), where I have gained 1 year 
+  of professional experience in building responsive web applications and Android apps using 
+  React.js and React Native. 
+  My work involves improving site performance, implementing reusable components, and integrating APIs 
+  to deliver seamless user experiences.
+  Previously, I worked as a Front-End Development Intern
+  at SevenMentor Pvt. Ltd., Pune (2024), where I built a strong foundation in modern web technologies 
+  and contributed to developing user-friendly and scalable solutions while collaborating with 
+  cross-functional teams.
             </p>
           </div>
         </div>
