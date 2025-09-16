@@ -3,12 +3,12 @@ import React from 'react';
 const Project = () => {
   const projects = [
     {
-      title: "Fruitables and Vegetables E-commerce",
-      description: 'An e-commerce platform for fresh fruits and vegetables with product listings, cart functionality, and responsive design.',
-      tech: "HTML5, CSS3, JavaScript, Bootstrap, jQuery",
+      title: "Nature Dialy",
+      description: 'A mobile app/marketplace for ordering daily essentials with fast delivery. Users can browse product categories, view details, place orders, and track their purchases.',
+      tech: "JavaScript, React Native, Expo",
       tools: "Visual Studio Code",
-      img: "/images/Capture.PNG",
-      link: "https://dipasaptal.github.io/Fruitables-and-vegetables-project-/#",
+      img: "/images/nature.jpeg",
+      link: "https://play.google.com/store/apps/details?id=com.masterzac.myapp",
     },
     {
       title: "Movie App",
