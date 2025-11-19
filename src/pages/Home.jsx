@@ -150,26 +150,26 @@ const Home = () => {
               </a>
             </motion.div>
 
-            {/* Stats */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.3 }}
-              className="grid grid-cols-3 gap-3 lg:gap-6 pt-4 lg:pt-6"
-            >
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl lg:text-4xl font-bold text-yellow-400">Multiple</div>
-                <div className="text-xs lg:text-sm text-gray-400">Projects Delivered</div>
-              </div>
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl lg:text-4xl font-bold text-yellow-400">Professional</div>
-                <div className="text-xs lg:text-sm text-gray-400">Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl lg:text-4xl font-bold text-yellow-400">100%</div>
-                <div className="text-xs lg:text-sm text-gray-400">Client Satisfaction</div>
-              </div>
-            </motion.div>
+           {/* Stats */}
+<motion.div 
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1.3 }}
+  className="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-6 pt-4 lg:pt-6"
+>
+  <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-3 sm:p-4 lg:p-5 border border-white/10 hover:border-yellow-500/50 transition-all">
+    <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-1 lg:mb-2 leading-tight">Multiple</div>
+    <div className="text-[10px] sm:text-xs lg:text-sm text-gray-300 font-medium leading-tight">Projects Delivered</div>
+  </div>
+  <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-3 sm:p-4 lg:p-5 border border-white/10 hover:border-yellow-500/50 transition-all">
+    <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-1 lg:mb-2 leading-tight">Professional</div>
+    <div className="text-[10px] sm:text-xs lg:text-sm text-gray-300 font-medium leading-tight">Experience</div>
+  </div>
+  <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-3 sm:p-4 lg:p-5 border border-white/10 hover:border-yellow-500/50 transition-all">
+    <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-1 lg:mb-2 leading-tight">100%</div>
+    <div className="text-[10px] sm:text-xs lg:text-sm text-gray-300 font-medium leading-tight">Client Satisfaction</div>
+  </div>
+</motion.div>
           </motion.div>
 
           {/* Right Image - Professional Photo with 3D Effect */}
