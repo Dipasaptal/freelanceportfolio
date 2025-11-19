@@ -76,13 +76,13 @@ const Home = () => {
           <div className="absolute bottom-1/4 left-2/3 w-5 h-5 bg-blue-400 rounded-full animate-bounce"></div>
         </div>
 
-        <section className="relative flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto min-h-screen px-4 sm:px-6 lg:px-8 pt-24 lg:pt-0 z-10">
+        <section className="relative flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto min-h-screen px-4 sm:px-6 lg:px-8 pt-20 lg:pt-0 z-10 gap-6 lg:gap-8">
           {/* Left Content */}
           <motion.div 
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="lg:w-1/2 w-full text-center lg:text-left space-y-6 lg:space-y-8"
+            className="lg:w-1/2 w-full text-center lg:text-left space-y-4 lg:space-y-8"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -108,7 +108,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
-              className="space-y-3 lg:space-y-4"
+              className="space-y-2 lg:space-y-4"
             >
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                 Freelance Web & Mobile App Developer
@@ -126,7 +126,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9 }}
-              className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl"
+              className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-2xl"
             >
               Expert in React.js & React Native | 1+ Year Experience | 
               Building Modern, Responsive & High-Performance Applications for Your Business Success
@@ -159,7 +159,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.3 }}
-              className="grid grid-cols-3 gap-4 lg:gap-6 pt-6 lg:pt-8"
+              className="grid grid-cols-3 gap-3 lg:gap-6 pt-4 lg:pt-8"
             >
               <div className="text-center">
                 <div className="text-2xl lg:text-4xl font-bold text-yellow-400">6+</div>
@@ -181,7 +181,7 @@ const Home = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="lg:w-1/2 w-full flex items-center justify-center relative mt-8 lg:mt-0"
+            className="lg:w-1/2 w-full flex items-center justify-center relative mt-4 lg:mt-0"
           >
             {/* 3D Card Effect */}
             <div className="relative group">
@@ -192,7 +192,7 @@ const Home = () => {
               <div className="absolute inset-0 rounded-full border-4 border-yellow-500 animate-spin-slow opacity-50"></div>
               
               {/* Main image container */}
-              <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden border-4 lg:border-8 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500">
+              <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden border-4 lg:border-8 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500">
                 <img
                   src="/images/dipa6.jpeg"
                   alt="Dipa Saptal"
