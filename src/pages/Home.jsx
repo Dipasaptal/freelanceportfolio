@@ -1,10 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-  const navigate = useNavigate();
-
   const projects = [
     {
       title: "Nature Dairy",
@@ -57,7 +54,7 @@ const Home = () => {
   ];
 
   const handleViewServices = () => {
-    navigate('/services');
+    window.location.href = '/services';
   };
 
   return (
@@ -76,13 +73,13 @@ const Home = () => {
           <div className="absolute bottom-1/4 left-2/3 w-5 h-5 bg-blue-400 rounded-full animate-bounce"></div>
         </div>
 
-        <section className="relative flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto min-h-screen px-4 sm:px-6 lg:px-8 pt-20 lg:pt-0 z-10 gap-6 lg:gap-8">
+        <section className="relative flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 z-10 gap-8 lg:gap-12">
           {/* Left Content */}
           <motion.div 
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="lg:w-1/2 w-full text-center lg:text-left space-y-4 lg:space-y-8"
+            className="lg:w-1/2 w-full text-center lg:text-left space-y-4 lg:space-y-6"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -99,7 +96,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight"
             >
               Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 animate-pulse">Dipa Saptal</span>
             </motion.h1>
@@ -108,15 +105,15 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
-              className="space-y-2 lg:space-y-4"
+              className="space-y-2 lg:space-y-3"
             >
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                 Freelance Web & Mobile App Developer
               </h2>
               
               <div className="relative inline-block">
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 blur-lg opacity-50 animate-pulse"></div>
-                <h3 className="relative text-xl sm:text-2xl lg:text-3xl font-bold text-white px-4 py-2 lg:px-6 lg:py-3 bg-black/30 rounded-lg border-2 border-yellow-400">
+                <h3 className="relative text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white px-3 py-2 lg:px-6 lg:py-3 bg-black/30 rounded-lg border-2 border-yellow-400">
                   Your Vision, My Code.
                 </h3>
               </div>
@@ -126,9 +123,9 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9 }}
-              className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-2xl"
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed"
             >
-              Expert in React.js & React Native | 1+ Year Experience | 
+              Expert in React.js & React Native | Professional Experience | 
               Building Modern, Responsive & High-Performance Applications for Your Business Success
             </motion.p>
 
@@ -138,17 +135,16 @@ const Home = () => {
               transition={{ delay: 1.1 }}
               className="flex flex-wrap gap-3 lg:gap-4 justify-center lg:justify-start"
             >
-              {/* Changed from View Portfolio to View Services */}
               <button
                 onClick={handleViewServices}
-                className="px-6 py-3 lg:px-8 lg:py-4 border-2 border-yellow-500 text-yellow-400 font-bold rounded-xl hover:bg-yellow-500 hover:text-black transform hover:scale-105 transition-all duration-300 shadow-lg text-sm lg:text-base"
+                className="px-5 py-2.5 lg:px-8 lg:py-4 border-2 border-yellow-500 text-yellow-400 font-bold rounded-xl hover:bg-yellow-500 hover:text-black transform hover:scale-105 transition-all duration-300 shadow-lg text-xs sm:text-sm lg:text-base"
               >
                 🔧 View Services
               </button>
 
               <a
                 href="tel:+918830××××××"
-                className="px-6 py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-bold rounded-xl hover:from-green-600 hover:to-emerald-600 transform hover:scale-105 transition-all duration-300 shadow-lg text-sm lg:text-base"
+                className="px-5 py-2.5 lg:px-8 lg:py-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-bold rounded-xl hover:from-green-600 hover:to-emerald-600 transform hover:scale-105 transition-all duration-300 shadow-lg text-xs sm:text-sm lg:text-base"
               >
                 📞 Call Now
               </a>
@@ -159,18 +155,18 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.3 }}
-              className="grid grid-cols-3 gap-3 lg:gap-6 pt-4 lg:pt-8"
+              className="grid grid-cols-3 gap-3 lg:gap-6 pt-4 lg:pt-6"
             >
               <div className="text-center">
-                <div className="text-2xl lg:text-4xl font-bold text-yellow-400">6+</div>
-                <div className="text-xs lg:text-sm text-gray-400">Projects Done</div>
+                <div className="text-xl sm:text-2xl lg:text-4xl font-bold text-yellow-400">Multiple</div>
+                <div className="text-xs lg:text-sm text-gray-400">Projects Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl lg:text-4xl font-bold text-yellow-400">1+</div>
-                <div className="text-xs lg:text-sm text-gray-400">Year Experience</div>
+                <div className="text-xl sm:text-2xl lg:text-4xl font-bold text-yellow-400">Professional</div>
+                <div className="text-xs lg:text-sm text-gray-400">Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl lg:text-4xl font-bold text-yellow-400">100%</div>
+                <div className="text-xl sm:text-2xl lg:text-4xl font-bold text-yellow-400">100%</div>
                 <div className="text-xs lg:text-sm text-gray-400">Client Satisfaction</div>
               </div>
             </motion.div>
@@ -181,7 +177,7 @@ const Home = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="lg:w-1/2 w-full flex items-center justify-center relative mt-4 lg:mt-0"
+            className="lg:w-1/2 w-full flex items-center justify-center relative"
           >
             {/* 3D Card Effect */}
             <div className="relative group">
@@ -191,8 +187,8 @@ const Home = () => {
               {/* Rotating ring */}
               <div className="absolute inset-0 rounded-full border-4 border-yellow-500 animate-spin-slow opacity-50"></div>
               
-              {/* Main image container */}
-              <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden border-4 lg:border-8 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500">
+              {/* Main image container - FIXED SIZES */}
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] rounded-full overflow-hidden border-4 lg:border-8 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500">
                 <img
                   src="/images/dipa6.jpeg"
                   alt="Dipa Saptal"
@@ -224,27 +220,26 @@ const Home = () => {
       </div>
 
       {/* Services Section */}
-      <section className="py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-black">
+      <section className="py-12 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-black">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-12 lg:mb-16"
+            className="text-center mb-10 lg:mb-16"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
                 Freelance Services
               </span>
             </h2>
 
-            <p className="text-gray-400 text-lg lg:text-xl mb-6">
+            <p className="text-gray-400 text-base md:text-lg lg:text-xl mb-6">
               What I Can Do For Your Business
             </p>
 
-            {/* ⭐ Added Marathi Intro Here */}
-            <p className="text-gray-300 leading-relaxed text-base sm:text-lg lg:text-xl max-w-3xl mx-auto">
+            <p className="text-gray-300 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl mx-auto">
               Hi, मी <span className="font-semibold text-yellow-400">Dipa</span>. तुमचा business online आणायचा आहे का?<br />
               मी <span className="font-semibold text-yellow-400">responsive वेबसाइट्स</span> आणि 
               <span className="font-semibold text-yellow-400"> mobile apps</span> तयार करून देते 💻 <br /><br />
@@ -255,11 +250,10 @@ const Home = () => {
               सगळं एकाच ठिकाणी. 
               <span className="font-semibold text-yellow-400"> Project साठी संपर्क करा!</span>
             </p>
-            {/* ⭐ End */}
           </motion.div>
 
           {/* Services Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
             {[
               {
                 icon: "💻",
@@ -292,15 +286,15 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.2 }}
                 whileHover={{ y: -10 }}
-                className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 lg:p-8 rounded-2xl border border-gray-700 hover:border-yellow-500 transition-all duration-300 shadow-xl hover:shadow-yellow-500/20"
+                className="bg-gradient-to-br from-gray-800 to-gray-900 p-5 lg:p-8 rounded-2xl border border-gray-700 hover:border-yellow-500 transition-all duration-300 shadow-xl hover:shadow-yellow-500/20"
               >
-                <div className="text-4xl lg:text-6xl mb-4 lg:mb-6">{service.icon}</div>
-                <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4 text-white">{service.title}</h3>
-                <p className="text-gray-400 mb-4 lg:mb-6 text-sm lg:text-base">{service.desc}</p>
+                <div className="text-3xl sm:text-4xl lg:text-6xl mb-3 lg:mb-6">{service.icon}</div>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 lg:mb-4 text-white">{service.title}</h3>
+                <p className="text-gray-400 mb-3 lg:mb-6 text-xs sm:text-sm lg:text-base">{service.desc}</p>
 
                 <ul className="space-y-2">
                   {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-center text-gray-300 text-sm lg:text-base">
+                    <li key={i} className="flex items-center text-gray-300 text-xs sm:text-sm lg:text-base">
                       <span className="text-green-500 mr-2">✓</span>
                       {feature}
                     </li>
@@ -313,29 +307,29 @@ const Home = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-purple-900 to-black">
+      <section id="projects" className="py-12 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-purple-900 to-black">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-12 lg:mb-16"
+            className="text-center mb-10 lg:mb-16"
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-8xl font-extrabold text-gray-800 opacity-10 mb-2 lg:mb-4">PROJECTS</h1>
-            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold -mt-8 lg:-mt-20 mb-4 lg:mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-extrabold text-gray-800 opacity-10 mb-2 lg:mb-4">PROJECTS</h1>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold -mt-6 lg:-mt-20 mb-3 lg:mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
                 My Recent Work
               </span>
             </h2>
-            <p className="text-gray-300 text-base lg:text-xl max-w-3xl mx-auto px-4">
+            <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-xl max-w-3xl mx-auto px-4">
               Analytical and self-driven developer building user-facing applications. Efficient and knowledgeable coder with
               skills in HTML, CSS, JavaScript, Bootstrap, React.js, and modern web technologies.
             </p>
           </motion.div>
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-8">
             {projects.map((proj, idx) => (
               <motion.div
                 key={idx}
@@ -346,38 +340,32 @@ const Home = () => {
                 className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-2xl overflow-hidden shadow-2xl hover:shadow-yellow-500/25 hover:border-yellow-500/50 transition-all duration-300 h-full flex flex-col"
               >
                 {/* Project Image */}
-                <div className="relative overflow-hidden h-40 sm:h-48 group">
+                <div className="relative overflow-hidden h-36 sm:h-40 md:h-48 group">
                   <img 
                     src={proj.img} 
                     alt={proj.title} 
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                    onError={(e) => {
-                      e.target.src = '/images/project-placeholder.png';
-                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
                 {/* Project Content */}
-                <div className="p-4 sm:p-6 flex-grow flex flex-col">
-                  <h5 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-white">{proj.title}</h5>
-                  <p className="text-gray-300 mb-3 sm:mb-4 flex-grow leading-relaxed text-sm sm:text-base">{proj.description}</p>
+                <div className="p-4 sm:p-5 lg:p-6 flex-grow flex flex-col">
+                  <h5 className="text-base sm:text-lg lg:text-2xl font-bold mb-2 text-white">{proj.title}</h5>
+                  <p className="text-gray-300 mb-3 flex-grow leading-relaxed text-xs sm:text-sm lg:text-base">{proj.description}</p>
                   
-                  {/* Technologies - SINGLE LINE LAYOUT */}
-                  <div className="mb-3 sm:mb-4 space-y-2">
-                    {/* Technologies */}
-                    <div className="flex items-center">
-                      <span className="font-bold text-yellow-400 text-sm sm:text-base whitespace-nowrap mr-2">💻 Technologies:</span>
-                      <span className="text-gray-300 text-xs sm:text-sm whitespace-nowrap overflow-hidden">
+                  <div className="mb-3 space-y-1.5">
+                    <div className="flex items-start">
+                      <span className="font-bold text-yellow-400 text-xs sm:text-sm whitespace-nowrap mr-2">💻 Tech:</span>
+                      <span className="text-gray-300 text-xs sm:text-sm line-clamp-2">
                         {proj.tech}
                       </span>
                     </div>
                     
-                    {/* Tools */}
                     {proj.tools && (
-                      <div className="flex items-center">
-                        <span className="font-bold text-purple-400 text-sm sm:text-base whitespace-nowrap mr-2">🛠️ Tools:</span>
-                        <span className="text-gray-300 text-xs sm:text-sm whitespace-nowrap overflow-hidden">
+                      <div className="flex items-start">
+                        <span className="font-bold text-purple-400 text-xs sm:text-sm whitespace-nowrap mr-2">🛠️ Tools:</span>
+                        <span className="text-gray-300 text-xs sm:text-sm">
                           {proj.tools}
                         </span>
                       </div>
@@ -387,13 +375,13 @@ const Home = () => {
                   {/* View Project Button */}
                   <a
                     href={proj.link}
-                    className="mt-auto group relative px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-black font-bold rounded-xl hover:from-orange-500 hover:to-red-500 transition-all duration-300 shadow-lg hover:shadow-yellow-500/50 text-center overflow-hidden text-sm sm:text-base"
+                    className="mt-auto group relative px-4 py-2 sm:px-5 sm:py-2.5 lg:px-6 lg:py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-black font-bold rounded-xl hover:from-orange-500 hover:to-red-500 transition-all duration-300 shadow-lg hover:shadow-yellow-500/50 text-center overflow-hidden text-xs sm:text-sm lg:text-base"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className="relative z-10 flex items-center justify-center">
                       View Project
-                      <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                       </svg>
                     </span>
@@ -406,17 +394,17 @@ const Home = () => {
       </section>
 
       {/* Why Choose Me Section */}
-      <section className="py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-900 to-gray-900">
+      <section className="py-12 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-900 to-gray-900">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="text-center mb-12 lg:mb-16"
+            className="text-center mb-10 lg:mb-16"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white">Why Choose Me?</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">Why Choose Me?</h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             {[
               { icon: "⚡", title: "Fast Delivery", desc: "Quick turnaround time without compromising quality" },
               { icon: "💰", title: "Affordable Rates", desc: "Competitive pricing for high-quality work" },
@@ -430,9 +418,9 @@ const Home = () => {
                 transition={{ delay: idx * 0.1 }}
                 className="bg-white/5 backdrop-blur-sm p-4 lg:p-6 rounded-xl text-center border border-white/10 hover:border-yellow-500 transition-all"
               >
-                <div className="text-4xl lg:text-5xl mb-3 lg:mb-4">{item.icon}</div>
-                <h3 className="text-lg lg:text-xl font-bold mb-2 text-white">{item.title}</h3>
-                <p className="text-gray-400 text-sm lg:text-base">{item.desc}</p>
+                <div className="text-3xl sm:text-4xl lg:text-5xl mb-2 lg:mb-4">{item.icon}</div>
+                <h3 className="text-sm sm:text-base lg:text-xl font-bold mb-1 lg:mb-2 text-white">{item.title}</h3>
+                <p className="text-gray-400 text-xs sm:text-sm lg:text-base">{item.desc}</p>
               </motion.div>
             ))}
           </div>
