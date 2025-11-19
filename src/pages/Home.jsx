@@ -194,7 +194,7 @@ const Home = () => {
               {/* Main image container */}
               <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden border-4 lg:border-8 border-white/10 shadow-2xl transform group-hover:scale-105 transition-all duration-500">
                 <img
-                  src="/images/dipa6.jpEg"
+                  src="/images/dipa6.jpeg"
                   alt="Dipa Saptal"
                   className="w-full h-full object-cover"
                 />
