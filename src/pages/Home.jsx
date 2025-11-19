@@ -150,24 +150,24 @@ const Home = () => {
               </a>
             </motion.div>
 
-           {/* Stats */}
+          {/* Stats */}
 <motion.div 
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 1.3 }}
-  className="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-6 pt-4 lg:pt-6"
+  className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-6 pt-4 lg:pt-6"
 >
-  <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-3 sm:p-4 lg:p-5 border border-white/10 hover:border-yellow-500/50 transition-all">
-    <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-1 lg:mb-2 leading-tight">Multiple</div>
-    <div className="text-[10px] sm:text-xs lg:text-sm text-gray-300 font-medium leading-tight">Projects Delivered</div>
+  <div className="text-center bg-white/5 backdrop-blur-sm rounded-lg lg:rounded-xl p-2.5 sm:p-3 md:p-4 lg:p-5 border border-white/10 hover:border-yellow-500/50 transition-all">
+    <div className="text-[11px] sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-0.5 sm:mb-1 lg:mb-1.5 leading-tight">Multiple</div>
+    <div className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs xl:text-sm text-gray-300 font-medium leading-tight">Projects Delivered</div>
   </div>
-  <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-3 sm:p-4 lg:p-5 border border-white/10 hover:border-yellow-500/50 transition-all">
-    <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-1 lg:mb-2 leading-tight">Professional</div>
-    <div className="text-[10px] sm:text-xs lg:text-sm text-gray-300 font-medium leading-tight">Experience</div>
+  <div className="text-center bg-white/5 backdrop-blur-sm rounded-lg lg:rounded-xl p-2.5 sm:p-3 md:p-4 lg:p-5 border border-white/10 hover:border-yellow-500/50 transition-all">
+    <div className="text-[11px] sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-0.5 sm:mb-1 lg:mb-1.5 leading-tight">Professional</div>
+    <div className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs xl:text-sm text-gray-300 font-medium leading-tight">Experience</div>
   </div>
-  <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-3 sm:p-4 lg:p-5 border border-white/10 hover:border-yellow-500/50 transition-all">
-    <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-1 lg:mb-2 leading-tight">100%</div>
-    <div className="text-[10px] sm:text-xs lg:text-sm text-gray-300 font-medium leading-tight">Client Satisfaction</div>
+  <div className="text-center bg-white/5 backdrop-blur-sm rounded-lg lg:rounded-xl p-2.5 sm:p-3 md:p-4 lg:p-5 border border-white/10 hover:border-yellow-500/50 transition-all">
+    <div className="text-[11px] sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-0.5 sm:mb-1 lg:mb-1.5 leading-tight">100%</div>
+    <div className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs xl:text-sm text-gray-300 font-medium leading-tight">Client Satisfaction</div>
   </div>
 </motion.div>
           </motion.div>
