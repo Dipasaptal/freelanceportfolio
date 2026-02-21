@@ -205,7 +205,7 @@ const About = () => {
             <div className="space-y-8">
               <div className="relative pl-8 border-l-4 border-yellow-500">
                 <div className="absolute -left-3 top-0 w-6 h-6 bg-yellow-500 rounded-full"></div>
-                <span className="text-yellow-400 font-bold">Oct 2024 - Present</span>
+                <span className="text-yellow-400 font-bold">Feb 2025 - Present</span>
                 <h3 className="text-xl font-bold mt-2">React.js Developer</h3>
                 <p className="text-gray-400">Z-Plus Cyber Secure Technology, Pune</p>
                 <p className="text-gray-300 mt-2">Building responsive web applications and Android apps using React.js and React Native. Improving site performance, implementing reusable components, and integrating APIs.</p>
